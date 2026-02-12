@@ -202,13 +202,13 @@ public class VelocityServer implements ProxyServer, ForwardingAudience {
     String implVersion;
     String implVendor;
     if (pkg != null) {
-      implName = MoreObjects.firstNonNull(pkg.getImplementationTitle(), "Velocity");
+      implName = MoreObjects.firstNonNull(pkg.getImplementationTitle(), "YoutubeMC-Proxy");
       implVersion = MoreObjects.firstNonNull(pkg.getImplementationVersion(), "<unknown>");
-      implVendor = MoreObjects.firstNonNull(pkg.getImplementationVendor(), "Velocity Contributors");
+      implVendor = MoreObjects.firstNonNull(pkg.getImplementationVendor(), "YoutubeMC-Proxy Contributors");
     } else {
-      implName = "Velocity";
+      implName = "YoutubeMC-Proxy";
       implVersion = "<unknown>";
-      implVendor = "Velocity Contributors";
+      implVendor = "YoutubeMC-Proxy Contributors";
     }
 
     return new ProxyVersion(implName, implVendor, implVersion);
