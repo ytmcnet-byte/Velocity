@@ -16,7 +16,7 @@ application {
 tasks {
     jar {
         manifest {
-            attributes["Implementation-Title"] = "Velocity"
+            attributes["Implementation-Title"] = "YoutubeMC"
             attributes["Implementation-Vendor"] = "Velocity Contributors"
             attributes["Multi-Release"] = "true"
         }
@@ -112,7 +112,7 @@ tasks {
 
 val projectVersion = version as String
 fill {
-    project("velocity")
+    project("YoutubeMC-Proxy")
 
     build {
         channel = BuildChannel.STABLE
